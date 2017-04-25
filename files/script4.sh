@@ -1,4 +1,4 @@
-# !/ bin / bash
+#!/bin/bash
 ## Primeiro script - Verificando se um usu á rio existe
 
 echo "Digite usuario para consulta :"
