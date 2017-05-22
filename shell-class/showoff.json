@@ -1,0 +1,14 @@
+{
+  "name": "Shell Script",
+  "description": "Example Presentation",
+  "author": "profhelder.pereira@fiap.com.br",
+  "templates" : {
+      "special" : "simple.tpl"
+  },
+  "pause_msg": "Paused !!!",
+  "sections": [
+    {"section":"Estrutura"},
+    {"section":"Variaveis"},
+    {"section":"End"}
+  ]
+}
