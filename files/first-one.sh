@@ -2,6 +2,6 @@
 # Meu primeiro shell script
 cd ~
 clear
-ls - alh
+ls -alh
 date
 cd -
