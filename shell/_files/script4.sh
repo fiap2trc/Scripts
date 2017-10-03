@@ -1,5 +1,5 @@
 #!/bin/bash
-## Primeiro script - Verificando se um usu á rio existe
+## Primeiro script - Verificando se um usuário existe
 
 echo "Digite usuario para consulta :"
 read USER
