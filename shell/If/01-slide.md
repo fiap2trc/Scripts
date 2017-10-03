@@ -1,27 +1,43 @@
 !SLIDE center transition=scrollUp
 
-# Parâmetros e Variáveis
+# Usando a estrutura “if”
 ![Shell-Logo](images/shell-logo.png)
+
+# Testando “strings”
 
 !SLIDE transition=scrollUp
 
-# Passagem de Parâmetros
 
-Na execução de scripts é muito comum a passagem de parâmetros,  existem algumas formas de passar essas iformações através de variaveis;
 
-Por exemplo, considere o script anterior, ao invés de listar o conteúdo do diretório pessoal do usuário poderiamos usar uma variável de forma que o script possa listar o conteúdo de um diretório qualquer;
+# Usando a estrutura “if”
 
-Por exemplo:
+Dentro de um script exceções, servem para ajudar quando o resultado de uma execução pode levar a mais de uma possibilidade, por exemplo: 
 
-    @@@shell
-    #!/bin/bash
-    #
-    # Declarando uma variavel:
-    cd
-    clear
-    ls $1
 
-.download second-one.sh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 !SLIDE commandline incremental transition=scrollUp
 
@@ -93,19 +109,3 @@ No exemplo do [script3.sh](https://raw.githubusercontent.com/helcorin/shell-scri
     Resultado 15
 
 .callout.question `O uso do comando sleep é muito comum na execução de scripts que requerem certo nível de interação com usuário ou algum tipo de pausa, antes de se obter a resposta`
-
-!SLIDE commandline incremental transition=scrollUp
-
-# A variável “$?“
-
-A variável interrogação é conhecida por testar o valor de retorno de qualquer comando quando mostrada após sua execução.
-
-Com ela podemos verificar se o programa foi executado com sucesso ou não. Essa variável tem dois retornos principais, Quando o resultado dessa variável é igual a “0” o comando foi executado com sucesso.
-
-    $ pwd ; echo $?
-    0
-
-Quando o resultado for diferente de “0”, existiu algum problema na execução do comando:
-
-    $ pwdsqn ; echo $?
-    1 
