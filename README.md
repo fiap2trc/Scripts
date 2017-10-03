@@ -1,12 +1,28 @@
 # Scripts
 Repositório para Shell Scripts e testes envolvendo automação simples de tarefas em Linux
 
-Material complementar e recomendações:
-
-- Download [canivete-shell](http://aurelio.net/shell/canivete/pdf/canivete-shell.pdf) relação de Operadores, Variaveis e sintaxe publicada no portal [aurelio.net](http://aurelio.net/shell/) por [Aurelio Jargas](https://www.linkedin.com/in/aureliojargas/);
-
-- Download [miniman](http://aurelio.net/shell/miniman/pdf/miniman.pdf) compilado de comandos Linux e opções úteis na construção de scripts, publicado no portal [aurelio.net/shell](http://aurelio.net/shell/) por [Aurelio Jargas](https://www.linkedin.com/in/aureliojargas/);
+---
 
 # Apanhadão de Shell Script
 
-Para facilitar a execução de exemplos foi criado um curso basico que roda usando a aplicação [showoff](https://github.com/puppetlabs/showoff) da Puppetlabs.
+Para facilitar a execução de exemplos foi criado um curso basico que roda usando a aplicação [showoff](https://github.com/puppetlabs/showoff) da Puppetlabs, para recriar o curso execute o seguinte:
+
+```sh
+docker run -p 8080:8080 helcorin/shell-basico   # Acesso via localhost:8080
+```
+
+Basta rodar o projeto com export da porta 8080 para a porta local a partir da qual pretende acessar o conteúdo;
+
+---
+
+# Material complementar e recomendações:
+
+O material abaixo foi publicado por  [Aurelio Jargas](https://www.linkedin.com/in/aureliojargas/), Uma bela relação de  Operadores, Variaveis e Sintaxes em shell script, ótima base para consulta:
+
+* [canivete-shell](http://aurelio.net/shell/canivete/pdf/canivete-shell.pdf) 
+
+- Este outro compilado de comandos Linux e opções de linha de comando  muito útil na construção de scripts, conteúdo também publicdo no portal [aurelio.net/shell](http://aurelio.net/shell/) por [Aurelio Jargas](https://www.linkedin.com/in/aureliojargas/);
+
+* [miniman](http://aurelio.net/shell/miniman/pdf/miniman.pdf) 
+
+
