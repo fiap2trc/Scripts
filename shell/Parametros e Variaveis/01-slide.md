@@ -103,9 +103,9 @@ A variável interrogação é conhecida por testar o valor de retorno de qualque
 Com ela podemos verificar se o programa foi executado com sucesso ou não. Essa variável tem dois retornos principais, Quando o resultado dessa variável é igual a “0” o comando foi executado com sucesso.
 
     $ pwd ; echo $?
-    0
+    $ 0
 
 Quando o resultado for diferente de “0”, existiu algum problema na execução do comando:
 
     $ pwdsqn ; echo $?
-    1 
+    $ 1
