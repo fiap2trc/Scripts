@@ -1,8 +1,12 @@
 #!/bin/bash
 
-clear
+while true;
+do
+
 echo "Escolha um número entre 1 e 3"
 read NUMBER
+
+
 case $NUMBER in
 1)
 clear ; echo -e "Já se programou para as provas?\n" ; cal
@@ -19,3 +23,5 @@ clear ; echo "$NOW, beleza hora de estudar shell script!"
 clear ; echo "Não foi isso que combinamos, digite algo entre 1 e 3"
 ;;
 esac
+
+done

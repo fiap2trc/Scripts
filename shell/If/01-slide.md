@@ -76,4 +76,32 @@ Dentro de um script exceções, servem para ajudar quando o resultado de uma exe
 
 O arquivo [script4.sh](https://raw.githubusercontent.com/helcorin/shell-script-basico/master/shell/_files/script4.sh) possui um exemplo de testes com estrutura "if"
 
+    @@@shell
+    echo "Digite usuario para consulta :"
+    read USER
+    REPLY=$(getent passwd | grep $USER)
+
+    if [ -z $REPLY ] ; then
+      echo "Usuario $USER não existe"
+        else
+      echo "Usuario Existe"
+    fi
+
 .callout.info `Nesse exemplo a variavel $REPLY foi recebida utilizando a instrução read que funciona como um tipo de prompt de comandos para interação.`
+
+# Usando a estrutura “if”
+
+Ainda com base neste mesmo exemplo podemos alterar o script fazendo uso da variavel interrogação que comentamos anteriormente seguida da função de teste conforme [exemplo](script5.sh) o que adicionaria uma validação extra caso a várivel esteja vazia:
+
+    @@@shell
+    echo "Digite usuario para consulta :"
+    read USER
+    REPLY=$(getent passwd | grep $USER)
+
+    test -z $REPLY
+
+    if [ $? -eq 0 ] ; then
+      echo "Usuario $USER não existe"
+        else
+      echo "Usuario Existe"
+    fi
